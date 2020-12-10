@@ -18,6 +18,7 @@
         margin: 0;
         padding: 0;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: teal;
     }
 
     header, footer {
@@ -27,6 +28,8 @@
 
         background-color: var(--black);
         color: var(--white);
+
+        box-shadow: 0px 0px 5px black;
     }
 
     header {
@@ -92,5 +95,18 @@
 
     footer a:hover {
         transform: translateY(-2px);
+        color: var(--white);
+    }
+
+    main {
+        width: 90vw;
+        background-color: var(--white);
+        
+        margin: 0 auto;
+
+        min-height: 500px;
+
+        margin-top: 5vw;
+        margin-bottom: 5vw;
     }
 }
