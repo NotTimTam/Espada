@@ -1,12 +1,19 @@
-/* Colors */
-:root {
-    --black: rgb(24, 24, 24)
-    --red: rgb(128, 0, 0);
-    --white: rgb(255, 255, 255);
-}
-
-html {
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
+@media(min-width: 401px) {
+    *,
+    *::after,
+    *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* Colors */
+     :root {
+        --black: rgb(24, 24, 24) --red: rgb(128, 0, 0);
+        --white: rgb(255, 255, 255);
+    }
+    html {
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+    }
 }
