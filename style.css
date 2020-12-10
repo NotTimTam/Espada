@@ -17,7 +17,7 @@
         scroll-behavior: smooth;
         margin: 0;
         padding: 0;
-        font-family: 'Rubik Mono One', sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     header, footer {
@@ -27,8 +27,6 @@
 
         background-color: var(--black);
         color: var(--white);
-
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
     header {
@@ -85,5 +83,14 @@
 
     footer a {
         text-align: center;
+        text-decoration: none;
+        color: var(--red);
+        text-transform: uppercase;
+
+        transition: all 0.3s;
+    }
+
+    footer a:hover {
+        transform: translateY(-2px);
     }
 }
