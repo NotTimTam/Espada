@@ -16,7 +16,7 @@ function check(parent) {
 
     // Depending if we are/aren't checked, change above element's css.
     if (checkbox.checked == true) {
-        div.style.maxHeight = `200px`;
+        div.style.maxHeight = `350px`;
         headerCheck.style = "transform: rotate(0deg);";
         parent.style = "margin-bottom: 15px; margin-top: 15px; border-radius: 0.5em;";
         checkbox.checked = false;
