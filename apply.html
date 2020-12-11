@@ -18,68 +18,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
 
     <style>
-        .sectionParent {
-            box-shadow: 0px -2px 5px #3a3a3a7e;
-            padding: 5px;
-
-            transition-property: all;
-            transition-duration: 0.5s;
-            transition-timing-function: ease-in-out;
-        }
-
-        .sectionHeading {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding-right: 10px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-
-            color: var(--red);
-            cursor: pointer;
-        }
-
-        .sectionBody {
-            overflow: hidden;
-            transition-property: all;
-            transition-duration: 0.5s;
-            transition-timing-function: ease-in-out;
-        }
-
-        .selector {
-            display: none;
-        }
-
-        .sectionParent:nth-child(1) {
-            border-top-left-radius: 0.5em;
-            border-top-right-radius: 0.5em;
-        }
-
-        .sectionParent:last-child {
-            border-bottom-left-radius: 0.5em;
-            border-bottom-right-radius: 0.5em;
-        }
-
-        .sectionBody button {
+        button {
             border-radius: 0.5em;
             border: none;
             outline: none;
             background-color: var(--red);
             color: white;
-            padding: 5px;
-            float: right;
+            padding: 10px;
 
             transition: all 0.3s;
         }
 
-        .sectionBody button:hover {
+        button:hover {
             background-color: rgb(209, 0, 0);
         }
 
-        #indicator {
-            transition: all 0.3s;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            cursor: pointer;
+        ol {
+            margin-left: 29px;
         }
     </style>
 </head>
@@ -110,8 +65,36 @@
             <h2 id="jobtitle">Loading job info...</h2>
         </div>
 
+        <!-- Application data -->
+        <br>
+        <h3>Job Info</h3>
+        <p>Veniam aliquip nisi ullamco consectetur anim veniam adipisicing.</p>
+        <br>
+        <h4>Requirements</h4>
+        <ol>
+            <li>Req 1</li>
+            <li>Req 2</li>
+        </ol>
+
+        <br>
+
+        <h3>Requirements Confirmation</h3>
         <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox"> I meet all job requirements listed above.</label>
         <p style="color: red;">Note: by clicking the above box you confirm that you meet all requirements for the position you are applying for.</p>
+        
+        <br>
+        
+        <h3>Upload a Copy of Your Resumé</h3>
+        <input type="file" name="resume" id="resume">
+        
+        <br>
+        <br>
+
+        <h3>Contact Info</h3>
+        <p>Email: <input type="email" name="" id="" placeholder="who@mailsite.com"></p>
+
+        
+        <button onclick="submitApp()">Submit Application</button><p id="warning"></p>
     </main>
 
     <footer>
@@ -129,7 +112,12 @@
             document.getElementById("jobtitle").innerText = `For: ${title}`;
             
             // Load that jobs specific data.
-            
+
+        }
+
+        function submitApp() {
+            const successThing = document.getElementById("warning");
+            warning.innerText = "Succesfully submitted application"
         }
     </script>
 </body>
