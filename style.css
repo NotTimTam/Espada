@@ -120,4 +120,15 @@
     main img {
         max-width: 100%;
     }
+
+    .special-header {
+        background: url(https://images.unsplash.com/photo-1566245024852-04fbf7842ce9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8c2VjdXJpdHklMjBndWFyZHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=60); 
+        height: 200px; 
+        background-size: 100%; 
+        background-repeat: no-repeat; 
+        background-position-y: -100vh; 
+        color: white; 
+        padding: 15px; 
+        background-attachment: fixed;
+    }
 }
