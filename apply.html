@@ -67,34 +67,32 @@
 
         <!-- Application data -->
         <br>
-        <h3>Job Info</h3>
-        <p>Veniam aliquip nisi ullamco consectetur anim veniam adipisicing.</p>
-        <br>
-        <h4>Requirements</h4>
-        <ol>
-            <li>Req 1</li>
-            <li>Req 2</li>
-        </ol>
+        <h2>Job Info</h2>
+        <div class="jobinfo" id="jobinfo">
+
+        </div>
 
         <br>
 
         <h3>Requirements Confirmation</h3>
-        <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox"> I meet all job requirements listed above.</label>
+        <label for="checkbox"><span style="color: red;">*</span><input type="checkbox" name="checkbox" id="checkbox"> I meet all job requirements listed above.</label>
         <p style="color: red;">Note: by clicking the above box you confirm that you meet all requirements for the position you are applying for.</p>
         
         <br>
         
         <h3>Upload a Copy of Your Resumé</h3>
-        <input type="file" name="resume" id="resume">
+        <p><span style="color: red;">*</span><input type="file" name="resume" id="resume"></p>
         
-        <br>
         <br>
 
         <h3>Contact Info</h3>
-        <p>Email: <input type="email" name="" id="" placeholder="who@mailsite.com"></p>
-
+        <p><span style="color: red;">*</span>Email: <input type="email" name="" id="emailinp" placeholder="who@mailsite.com"></p>
+        <p>Phone Number: <input type="tel" name="" id="" placeholder="(000) 000-0000"></p>
+        <br>
         
-        <button onclick="submitApp()">Submit Application</button><p id="warning"></p>
+        <p><button onclick="submitApp()">Submit Application</button> <span id="warning"></span></p>
+        
+        <p style="color:red;"><br><span style="color: red;">*</span>required</p>
     </main>
 
     <footer>
@@ -105,19 +103,49 @@
     <script src="main.js"></script>
     <script>
         function loadJob() {
-            // Get the data from the title and load the job.
-            let title = window.location.hash;
-            title = title.replace('%20', ' ');
-            title = title.replace('#', '');
-            document.getElementById("jobtitle").innerText = `For: ${title}`;
+            // Get the data from the url and load the job.
+            let data = window.location.hash;
+            
+            // Re-convert html.
+            data = data.replace('#', '');
+            data = data.replace(/%20/g, " ");
+            data = data.replace(/%3C/g, "<");
+            data = data.replace(/%3E/g, ">");
+            data = data.replace('<br>                <button onclick=%22apply(this)%22>Apply Now!</button>', '');
+
+            console.log(data);
+            
+            // Seperate the data.
+            let dataSet = data.split('||');
+
+            // Load the title.
+            document.getElementById("jobtitle").innerText = `For: ${dataSet[0]}`;
             
             // Load that jobs specific data.
-
+            document.getElementById("jobinfo").innerHTML = dataSet[1];
         }
 
+        // Check if everything is filled out and submit.
         function submitApp() {
+            // Get the output for the display of the message.
             const successThing = document.getElementById("warning");
-            warning.innerText = "Succesfully submitted application"
+            if (!document.getElementById('checkbox').checked) {
+                // No confirmation.
+                warning.innerText = "Requirements confirmation not acknowledged."
+                warning.style.color = "red";
+            } else if (document.getElementById("resume").files.length == 0) {
+                // We are missing a file.
+                warning.innerText = "No resumé file uploaded."
+                warning.style.color = "red";
+            } else if (document.getElementById('emailinp').value == "" || document.getElementById('emailinp').value == " ") {
+                // No email address was given.
+                warning.innerText = "No email address was given."
+                warning.style.color = "red";
+            } else {
+                // Everything is ok. We submit the application.
+                warning.innerHTML = "<br>Successfully submitted application. We will get back to you soon. You may now close this page..."
+                warning.style.color = "green";
+            }
         }
     </script>
 </body>

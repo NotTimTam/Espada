@@ -32,5 +32,9 @@ function check(parent) {
 function apply(element) {
     // Grab the job title and move to the applications page with it.
     let title = element.parentElement.parentElement.children[1].children[0].innerText;
-    window.location.href = `apply.html#${title}`;
+
+    // Get all the job data and send it too.
+    let extradata = element.parentElement.parentElement.children[2].innerHTML.toString();
+    
+    window.location.href = `apply.html#${title}||${extradata}`;
 }
