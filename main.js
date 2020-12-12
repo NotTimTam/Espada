@@ -40,7 +40,6 @@ function apply(element) {
     extradata = extradata.replace(/</g, "%3C");
     extradata = extradata.replace(/>/g, "%3E");
     extradata = extradata.replace(/ /g, "%20");
-    console.log(extradata)
 
-    //window.location.href = `apply.html#${title}||${extradata}`;
+    window.location.href = `apply.html#${title}||${extradata}`;
 }
