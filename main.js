@@ -16,7 +16,7 @@ function check(parent) {
 
     // Depending if we are/aren't checked, change above element's css.
     if (checkbox.checked == true) {
-        div.style.maxHeight = `200px`;
+        div.style.maxHeight = `350px`;
         headerCheck.style = "transform: rotate(0deg);";
         parent.style = "margin-bottom: 15px; margin-top: 15px; border-radius: 0.5em;";
         checkbox.checked = false;
@@ -36,5 +36,11 @@ function apply(element) {
     // Get all the job data and send it too.
     let extradata = element.parentElement.parentElement.children[2].innerHTML.toString();
     
-    window.location.href = `apply.html#${title}||${extradata}`;
+    // Convert the extradata to pure string.
+    extradata = extradata.replace(/</g, "%3C");
+    extradata = extradata.replace(/>/g, "%3E");
+    extradata = extradata.replace(/ /g, "%20");
+    console.log(extradata)
+
+    //window.location.href = `apply.html#${title}||${extradata}`;
 }

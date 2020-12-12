@@ -43,7 +43,6 @@
             overflow: hidden;
             transition-property: all;
             transition-duration: 0.5s;
-            transition-timing-function: ease-in-out;
         }
 
         .selector {
@@ -111,21 +110,26 @@
     <main>
         <div class="special-header">
             <h1>Jobs</h1>
+            <h2>We are hiring, apply below!</h2>
+            <h3>Click dropdowns for more info.</h3>
         </div>
         <div class="sectionParent">
             <input type="checkbox" class="selector" name="checkbox" id="checkbox" checked>
             <div class="sectionHeading" onclick="check(this.parentElement)">
-                <h3>Job 1</h3>
+                <h3>Alarm Specialist</h3>
                 <h3 id="indicator" style="transform: rotate(180deg);">^</h3>
             </div>
             <div class="sectionBody" id="sectionBody" style="max-height: 0px;">
                 <h4>About</h4>
-                <p>Veniam aliquip nisi ullamco consectetur anim veniam adipisicing.</p>
+                <p>In charge of installing and monitoring alarm and camera systems in homes. Dispatch the police or service guards to handle incoming calls about security threats and risks.
+                    Respond to any alarms going off to ensure the safety of the client and the buildings.
+                    </p>
                 <br>
                 <h4>Requirements</h4>
                 <ol>
-                    <li>Req 1</li>
-                    <li>Req 2</li>
+                    <li>18 and older.</li>
+                    <li>GED or high-school diploma.</li>
+                    <li>Background check and no criminal history.</li>
                 </ol>
                 <br>
                 <button onclick="apply(this)">Apply Now!</button>
@@ -135,7 +139,7 @@
         <div class="sectionParent">
             <input type="checkbox" class="selector" name="checkbox" id="checkbox" checked>
             <div class="sectionHeading" onclick="check(this.parentElement)">
-                <h3>Job 2</h3>
+                <h3>Security Guard</h3>
                 <h3 id="indicator" style="transform: rotate(180deg);">^</h3>
             </div>
             <div class="sectionBody" id="sectionBody" style="max-height: 0px;">
@@ -144,8 +148,10 @@
                 <br>
                 <h4>Requirements</h4>
                 <ol>
-                    <li>Req 1</li>
-                    <li>Req 2</li>
+                    <li>21 and older.</li>
+                    <li>GED or high-school diploma.</li>
+                    <li>Background check and no criminal history.</li>
+                    <li>Guard card.</li>
                 </ol>
                 <br>
                 <button onclick="apply(this)">Apply Now!</button>
@@ -155,7 +161,7 @@
         <div class="sectionParent">
             <input type="checkbox" class="selector" name="checkbox" id="checkbox" checked>
             <div class="sectionHeading" onclick="check(this.parentElement)">
-                <h3>Job 3</h3>
+                <h3>Specialized Bodyguard</h3>
                 <h3 id="indicator" style="transform: rotate(180deg);">^</h3>
             </div>
             <div class="sectionBody" id="sectionBody" style="max-height: 0px;">
@@ -164,8 +170,15 @@
                 <br>
                 <h4>Requirements</h4>
                 <ol>
-                    <li>Req 1</li>
-                    <li>Req 2</li>
+                    <li>21 and older</li>
+                    <li>2 years of working experience</li>
+                    <li>GED or Diploma</li>
+                    <li>Background check and no criminal history</li>
+                    <li>Guard Card</li>
+                    <li>Valid driver's license </li>
+                    <li>Willingness to be trained in specialities </li>
+                    <li>Medical</li>
+                    <li>Mechanic</li>
                 </ol>
                 <br>
                 <button onclick="apply(this)">Apply Now!</button>
@@ -175,17 +188,18 @@
         <div class="sectionParent">
             <input type="checkbox" class="selector" name="checkbox" id="checkbox" checked>
             <div class="sectionHeading" onclick="check(this.parentElement)">
-                <h3>Job 4</h3>
+                <h3>Self Defense Instructor</h3>
                 <h3 id="indicator" style="transform: rotate(180deg);">^</h3>
             </div>
             <div class="sectionBody" id="sectionBody" style="max-height: 0px;">
                 <h4>About</h4>
-                <p>Veniam aliquip nisi ullamco consectetur anim veniam adipisicing.</p>
+                <p>3 day, 30 hour program.</p>
                 <br>
                 <h4>Requirements</h4>
                 <ol>
-                    <li>Req 1</li>
-                    <li>Req 2</li>
+                    <li>25 and older</li>
+                    <li>Background check and no criminal history</li>
+                    <li>Letter of recommendation from current military or police officer</li>
                 </ol>
                 <br>
                 <button onclick="apply(this)">Apply Now!</button>
@@ -195,17 +209,21 @@
         <div class="sectionParent">
             <input type="checkbox" class="selector" name="checkbox" id="checkbox" checked>
             <div class="sectionHeading" onclick="check(this.parentElement)">
-                <h3>Job 5</h3>
+                <h3>Butler</h3>
                 <h3 id="indicator" style="transform: rotate(180deg);">^</h3>
             </div>
             <div class="sectionBody" id="sectionBody" style="max-height: 0px;">
                 <h4>About</h4>
-                <p>Veniam aliquip nisi ullamco consectetur anim veniam adipisicing.</p>
+                <p>3 day, 30 hour program.</p>
                 <br>
                 <h4>Requirements</h4>
                 <ol>
-                    <li>Req 1</li>
-                    <li>Req 2</li>
+                    <li>2 years of experience in hospitality or customer service</li>
+                    <li>Certification in safety management or food safety </li>
+                    <li>Able to adapt to any situation when the need arises</li>
+                    <li>Traveling is mandatory</li>
+                    <li>High school diploma or GED</li>
+                    <li>Background check and no criminal history </li>
                 </ol>
                 <br>
                 <button onclick="apply(this)">Apply Now!</button>
@@ -215,37 +233,26 @@
         <div class="sectionParent">
             <input type="checkbox" class="selector" name="checkbox" id="checkbox" checked>
             <div class="sectionHeading" onclick="check(this.parentElement)">
-                <h3>Job 6</h3>
+                <h3>Chauffeur</h3>
                 <h3 id="indicator" style="transform: rotate(180deg);">^</h3>
             </div>
             <div class="sectionBody" id="sectionBody" style="max-height: 0px;">
                 <h4>About</h4>
-                <p>Veniam aliquip nisi ullamco consectetur anim veniam adipisicing.</p>
+                <p>3 day, 30 hour program.</p>
                 <br>
                 <h4>Requirements</h4>
                 <ol>
-                    <li>Req 1</li>
-                    <li>Req 2</li>
-                </ol>
-                <br>
-                <button onclick="apply(this)">Apply Now!</button>
-            </div>
-        </div>
-
-        <div class="sectionParent">
-            <input type="checkbox" class="selector" name="checkbox" id="checkbox" checked>
-            <div class="sectionHeading" onclick="check(this.parentElement)">
-                <h3>Job 7</h3>
-                <h3 id="indicator" style="transform: rotate(180deg);">^</h3>
-            </div>
-            <div class="sectionBody" id="sectionBody" style="max-height: 0px;">
-                <h4>About</h4>
-                <p>Veniam aliquip nisi ullamco consectetur anim veniam adipisicing.</p>
-                <br>
-                <h4>Requirements</h4>
-                <ol>
-                    <li>Req 1</li>
-                    <li>Req 2</li>
+                    <li>Assist client with loading and unloading into company vehicle</li>
+                    <li>Abide by road regulations </li>
+                    <li>Selecting the fastest routes unless instructed otherwise </li>
+                    <li>Defensive driving experience required</li>
+                    <li>Neat appearance </li>
+                    <li>Ability to work 12/7 on weekend and holidays</li>
+                    <li>Must be able to interact in an appropriate manner at all times to the client and their company</li>
+                    <li>Valid driver's license </li>
+                    <li>Organized and good with time management</li>
+                    <li>License to transport others in automobiles</li>
+                    <li>Commercial drivers license </li>
                 </ol>
                 <br>
                 <button onclick="apply(this)">Apply Now!</button>
