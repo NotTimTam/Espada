@@ -36,5 +36,11 @@ function apply(element) {
     // Get all the job data and send it too.
     let extradata = element.parentElement.parentElement.children[2].innerHTML.toString();
     
-    window.location.href = `apply.html#${title}||${extradata}`;
+    // Convert the extradata to pure string.
+    extradata = extradata.replace(/</g, "%3C");
+    extradata = extradata.replace(/>/g, "%3E");
+    extradata = extradata.replace(/ /g, "%20");
+    console.log(extradata)
+
+    //window.location.href = `apply.html#${title}||${extradata}`;
 }
