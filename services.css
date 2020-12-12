@@ -276,9 +276,12 @@
     h1 {
         text-align: center;
     }
-    p {
+    p.first {
         text-align: center;
         color: white;
+    }
+    p.center{
+        text-align: center;
     }
     .main {
         text-align: center;
@@ -306,5 +309,10 @@
     }
     button.secondary {
         background-color: #008011;
+        position: relative;
+        display: inline-block;
+    }
+    a.center{
+        text-align: center;
     }
 }
