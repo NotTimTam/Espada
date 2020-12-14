@@ -1,3 +1,6 @@
+section{
+    text-align: center;
+}
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #333333;
@@ -177,7 +180,6 @@ main p {
 }
 .main {
     text-align: center;
-    color: black;
 }
 section.buttonC {
     display: flex;
@@ -208,30 +210,21 @@ p.center{
 }
 .main {
     text-align: center;
-    color: black;
 }
-section.buttonC {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-section.buttonS {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-section.buttonG {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-section.buttonP {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-button.secondary {
+.button1 {
     background-color: #008011;
+    color: white;
+    padding: 32px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+    background: #008011;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    text-decoration: none;
     position: relative;
     display: inline-block;
 }
