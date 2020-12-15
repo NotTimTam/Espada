@@ -46,12 +46,10 @@ function apply(element) {
 
 function myFunctionS() {
     if (document.getElementById("myDropdownS").style.maxHeight == "0px") {
-        console.log("was closed")
         document.getElementById("myDropdownS").style.maxHeight = "300px";
         document.getElementById("myDropdownS").style.padding = "15px";
 
     } else {
-        console.log("was open")
         document.getElementById("myDropdownS").style.maxHeight = "0px";
         document.getElementById("myDropdownS").style.padding = "0px";
     }
