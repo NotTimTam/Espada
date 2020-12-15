@@ -35,6 +35,10 @@
         ol {
             margin-left: 29px;
         }
+
+        ul {
+            list-style: none;
+        }
     </style>
 </head>
 
@@ -113,7 +117,7 @@
 
             <br>
 
-            <p><button onclick="submitApp()">Submit Application</button> <span id="warning"></span></p>
+            <p><button onclick="submitPurch()">Submit Purchase</button> <span id="warning"></span></p>
     </main>
 
     <footer>
@@ -121,18 +125,19 @@
         <a href="#top" id="bttB">Back to top</a>
     </footer>
 
-    <script src="main.js"></script>
     <script>
         // Check if everything is filled out and submit.
-        function submitApp() {
+        function submitPurch() {
             // Get the output for the display of the message.
             const successThing = document.getElementById("warning");
-            // Everything is ok. We submit the application.
-            warning.innerHTML = "<br>Successfully submitted application. We will get back to you soon. You may now close this page..."
-            warning.style.color = "green";
-        }
 
+            // Everything is ok. We submit the application.
+            successThing.innerHTML = "<br>Successfully submitted purchase. We will get back to you soon. You may now close this page...";
+            successThing.style.color = "green";
+        }
     </script>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
