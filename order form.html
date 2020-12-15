@@ -60,47 +60,60 @@
 
     <main>
         <div class="special-header">
-            <h1>Packages and Orders Purchase page</h1>
+            <h1>Checkout</h1>
         </div>
+        <br>
 
         <!-- Application data -->
-        <h3>Package Options</h3>
+
+        <h3>
+            Would you like an Extra Special Deal?
+        </h3>
         <ul>
             <li>
-                <input type="radio" id="Copper" name="Orders">
-                <label for="Copper">Copper</label>
+                <input type="checkbox" id="1" name="1" value="1">
+                <label for="1"> Self defense Instructor </label>
+                <p>
+                    &nbsp &nbsp &nbsp -Tacticts
+                    <br>
+                    &nbsp &nbsp &nbsp -Firearms
+                    <br>
+                    &nbsp &nbsp &nbsp -Martial Arts
+                    <br>
+                </p>
             </li>
+            <br>
             <li>
-                <input type="radio" id="Silver" name="Orders">
-                <label for="Silver">Silver</label>
-            </li>
-            <li>
-                <input type="radio" id="Gold" name="Orders">
-                <label for="Gold">Gold</label>
-            </li>
-            <li>
-                <input type="radio" id="Platinum" name="Orders">
-                <label for="Platinum">Platinum</label>
+                <input type="checkbox" id="2" name="2" value="2">
+                <label for="2"> Butler </label>
+                <p>
+                    &nbsp &nbsp &nbsp -Manages food/safety
+                    <br>
+                    &nbsp &nbsp &nbsp -Greeting and checking guests
+                    <br>
+                    &nbsp &nbsp &nbsp -Cleans and organizes rooms
+                    <br>
+                </p>
             </li>
         </ul>
-        <br>
-            <h3>Personal Information</h3>
-            <ul>
-                <li>
-                    <label for="Name">Name:</label><input type="text" id="Name" name="user.Name">
-                </li>
-                <li>
-                    <label for="Email">Email:</label><input type="text" id="Email" name="user.Email">
-                </li>
-                <li>
-                    <label for="PN">Phone Number:</label><input type="text" id="PN" name="user.PN">
-                </li>
+        <br><br>
+        <h3>Checkout Information</h3>
+        <ul>
+            <li>
+                <label for="Name">Name:</label><input type="text" id="Name" name="user.Name">
+            </li>
+            <li>
+                <label for="Email">Email:</label><input type="text" id="Email" name="user.Email">
+            </li>
+            <li>
+                <label for="PN">Phone Number:</label><input type="text" id="PN" name="user.PN">
+            </li>
 
-                </div>
+            </div>
 
-                <br>
+            <br>
 
-                <p><button onclick="submitApp()">Submit Application</button> <span id="warning"></span></p>
+            <p><button onclick="submitApp()">Submit Application</button> <span id="warning"></span></p>
     </main>
 
     <footer>
