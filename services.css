@@ -7,7 +7,8 @@ section{
 }
 /* Dropdown Button */
 .dropbtnS {
-    background-color: #b9b9b9;
+    outline: none;
+    background: radial-gradient(circle at 25% 25%, #dbdbdb, #b9b9b9, #8d8d8d);
     color: var(--red);
     padding: 32px;
     font-size: 16px;
@@ -15,6 +16,9 @@ section{
     cursor: pointer;
     height: 100px;
     width: 400px;
+
+    font-weight: bolder;
+    font-size: 1.2em;
 }
 .dropbtnS:hover, .dropbtnS:focus {
     background-color: #d1d1d1;
@@ -24,13 +28,15 @@ section{
     display: inline-block;
 }
 .dropdown-contentS {
-    display: none;
+    outline: none;
     position: absolute;
     background-color: #d1d1d1;
     min-width: 400px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     text-align: center;
+
+    overflow: hidden;
 
     padding: 15px;
 
@@ -39,11 +45,10 @@ section{
 .dropdown-contentP button:hover {
     background-color: #920000;
 }
-.show {
-    display: block;
-}
+
 /* Dropdown Button */
 .dropbtnG {
+    outline: none;
     background-color: #fbff00;
     color: var(--red);
     padding: 32px;
@@ -53,6 +58,9 @@ section{
     height: 100px;
     width: 400px;
     background: radial-gradient(circle at 25% 25%, #e3e642, #eff300, #cace00);
+
+    font-weight: bolder;
+    font-size: 1.2em;
 }
 .dropbtnG:hover, .dropbtnG:focus {
     background-color: #fdff70;
@@ -62,13 +70,17 @@ section{
     display: inline-block;
 }
 .dropdown-contentG {
-    display: none;
+    outline: none;
     position: absolute;
     background-color: #fdff70;
     min-width: 400px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     text-align: center;
+
+    overflow: hidden;
+
+    transition: all 0.3s;
 }
 
 .dropdown-contentP button:hover {
@@ -79,6 +91,7 @@ section{
 }
 /* Dropdown Button */
 .dropbtnP {
+    outline: none;
     background-color: #c7fbff;
     color: var(--red);
     padding: 32px;
@@ -88,6 +101,9 @@ section{
     height: 100px;
     width: 400px;
     background: radial-gradient(circle at 25% 25%, #c5eaee, #b5e4e7, #768d8f);
+
+    font-weight: bolder;
+    font-size: 1.2em;
 }
 .dropbtnP:hover, .dropbtnG:focus {
     background-color: #d5f6f8;
@@ -97,13 +113,16 @@ section{
     display: inline-block;
 }
 .dropdown-contentP {
-    display: none;
     position: absolute;
     background-color: #d5f6f8;
     min-width: 400px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     text-align: center;
+
+    overflow: hidden;
+
+    transition: all 0.3s;
 }
 
 .dropdown-contentP button:hover {
