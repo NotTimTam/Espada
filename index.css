@@ -1,41 +1,20 @@
-@media(min-width: 401px) {
-    .about h3 {
-        text-align: center;
-        color: var(--red);
-        text-transform: uppercase;
-        font-size: 1.3em;
-    }
-    .about {
-        line-height: 2em;
-        font-size: 1.1em;
-    }
-    dl dt {
-        margin-top: 10px;
-        font-weight: bolder;
-        color: var(--red);
-        text-transform: uppercase;
-        font-size: 1.1em;
-        text-decoration: underline var(--red);
-    }
+.about h3 {
+    text-align: center;
+    color: var(--red);
+    text-transform: uppercase;
+    font-size: 1.3em;
+} 
+
+.about {
+    line-height: 2em;
+    font-size: 1.1em;
 }
 
-@media(max-width: 400px) {
-    .about h3 {
-        text-align: center;
-        color: var(--red);
-        text-transform: uppercase;
-        font-size: 1.3em;
-    }
-    .about {
-        line-height: 2em;
-        font-size: 1.1em;
-    }
-    dl dt {
-        margin-top: 10px;
-        font-weight: bolder;
-        color: var(--red);
-        text-transform: uppercase;
-        font-size: 1.1em;
-        text-decoration: underline var(--red);
-    }
+dl dt {
+    margin-top: 10px;
+    font-weight: bolder;
+    color: var(--red);
+    text-transform: uppercase;
+    font-size: 1.1em;
+    text-decoration: underline var(--red);
 }
