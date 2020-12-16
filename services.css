@@ -200,24 +200,24 @@ main a:hover {
 
 @media (max-width: 399px) {
     .dropbtnS {
-        width: 300px;
+        width: 100%;
     }
     .dropdown-contentS {
-        min-width: 300px;
+        min-width: 100%;
     }
     
     /* Dropdown Button */
     .dropbtnG {
-        width: 300px;
+        width: 100%;
     }
     .dropdown-contentG {
-        min-width: 300px;
+        min-width: 100%;
     }
     /* Dropdown Button */
     .dropbtnP {
-        width: 300px;
+        width: 100%;
     }
     .dropdown-contentP {
-        min-width: 300px;
+        min-width: 100%;
     }
 }
