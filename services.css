@@ -56,7 +56,7 @@ section{
     cursor: pointer;
     height: 100px;
     width: 400px;
-    background: radial-gradient(circle at 25% 25%, #e3e642, #eff300, #cace00);
+    background: radial-gradient(circle at 25% 25%, #e3e642, #fbff00, #cace00);
 
     font-weight: bolder;
     font-size: 1.2em;
