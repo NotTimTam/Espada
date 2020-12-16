@@ -128,9 +128,6 @@ section{
 .show {
     display: block;
 }
-main h1 {
-    color: black;
-}
 
 article h1 {
     text-align: center;
@@ -198,4 +195,29 @@ main a:hover {
 }
 .spacer {
     min-height: 90vh;
+}
+
+
+@media (max-width: 399px) {
+    .dropbtnS {
+        width: 300px;
+    }
+    .dropdown-contentS {
+        min-width: 300px;
+    }
+    
+    /* Dropdown Button */
+    .dropbtnG {
+        width: 300px;
+    }
+    .dropdown-contentG {
+        min-width: 300px;
+    }
+    /* Dropdown Button */
+    .dropbtnP {
+        width: 300px;
+    }
+    .dropdown-contentP {
+        min-width: 300px;
+    }
 }

@@ -122,15 +122,6 @@
     ol {
         margin-left: 29px;
     }
-    .special-header {
-        background: url(images/cat10.png);
-        height: 200px;
-        background-size: 150%;
-        background-position: 300px 0px;
-        color: white;
-        padding: 15px;
-        background-attachment: fixed;
-    }
     .spacer {
         min-height: 90vh;
     }

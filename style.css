@@ -138,6 +138,7 @@ html {
     header {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
     }
     .logo {
         display: flex;
@@ -145,22 +146,27 @@ html {
         align-items: center;
         text-transform: uppercase;
         font-family: 'Rubik Mono One', sans-serif;
+        height: 60px;
     }
     .logo h1 {
-        letter-spacing: 15px;
-        color: var(--red);
+        width: 0px;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
     }
     .logo p {
-        font-size: 0.5em;
-        letter-spacing: 3px;
+        width: 0px;
+        overflow: hidden;
         padding: 0;
         margin: 0;
     }
     .logo img {
         width: 60px;
         height: 60px;
-        margin-right: 5px;
         padding: 5px;
+    }
+    .nav {
+        margin-bottom: 10px;
     }
     .nav ul {
         list-style: none;
@@ -171,11 +177,17 @@ html {
     }
     .nav ul li a {
         transition: all 0.3s;
-        color: var(--white);
+        color: var(--red);
+        background-color: white;
         text-decoration: none;
+        
         margin-right: 10px;
         margin-left: 10px;
         font-size: 1.5em;
+
+        padding: 3px;
+
+        border-radius: 0.2em;
     }
     .nav ul li a:hover {
         color: var(--red);
@@ -224,11 +236,10 @@ html {
     }
     .special-header {
         background: url(https://images.unsplash.com/photo-1566245024852-04fbf7842ce9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8c2VjdXJpdHklMjBndWFyZHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=60);
-        height: 200px;
         background-size: 100%;
         background-repeat: no-repeat;
         background-position-y: -100vh;
-        color: white;
+        color: black;
         padding: 15px;
         background-attachment: fixed;
     }
