@@ -113,7 +113,7 @@
             data = data.replace(/%20/g, " ");
             data = data.replace(/%3C/g, "<");
             data = data.replace(/%3E/g, ">");
-            data = data.replace('<br>                <button onclick=%22apply(this)%22>Apply Now!</button>', '');
+            data = data.replace(`<br>                    <button onclick=%22apply(this)%22>Apply Now!</button> `, '');
 
             console.log(data);
             
