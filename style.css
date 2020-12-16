@@ -141,12 +141,18 @@
         background-color: var(--black);
         color: var(--white);
         box-shadow: 0px 0px 5px black;
+        
+
     }
     header {
         position: sticky;
         left: 0;
         top: 0;
         z-index: 999;
+    }
+    h1 {
+        padding: 100%;
+        font-size: 5rem;
     }
     .logo {
         display: flex;
@@ -198,6 +204,7 @@
         color: var(--red);
         text-transform: uppercase;
         transition: all 0.3s;
+        padding: 60%;
     }
     footer a:hover {
         transform: translateY(-2px);
@@ -232,12 +239,12 @@
         background: #333333;
     }
     .special-header {
-        background: url(images/secguard.jpg); 
-        height: 200px; 
-        background-size: 100%; 
-        background-position-y: -100vh; 
-        color: white; 
-        padding: 15px; 
+        background: url(images/secguard.jpg);
+        height: 200px;
+        background-size: 100%;
+        background-position-y: -100vh;
+        color: white;
+        padding: 15px;
         background-attachment: fixed;
     }
 }
