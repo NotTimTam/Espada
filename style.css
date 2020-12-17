@@ -234,7 +234,7 @@ html {
     ::-webkit-scrollbar-thumb:hover {
         background: #333333;
     }
-    .special-header {
+    main .special-header {
         background-size: 100%;
         background-repeat: no-repeat;
         background-position-y: -100vh;
